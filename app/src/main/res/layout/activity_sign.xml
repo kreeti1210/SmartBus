@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign"
+    android:background="@color/colorPrimary">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:id="@+id/layout"
+            >
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:id="@+id/logo"
+                android:src="@drawable/bussplashscreen"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WELCOME TO SIGN UP PAGE"
+                android:textColor="@android:color/white"
+                android:background="@color/colorAccent"
+                android:textSize="25sp"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/layout">
+
+            <EditText
+                android:layout_width="329dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="145dp"
+                android:hint="Username"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:id="@+id/username"/>
+
+
+            <EditText
+                android:layout_width="329dp"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="34dp"
+                android:textSize="25sp"
+                android:id="@+id/phone"/>
+            <EditText
+                android:layout_width="329dp"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:layout_marginLeft="35dp"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="34dp"
+                android:textSize="25sp"
+                android:id="@+id/email"/>
+            <EditText
+                android:layout_width="329dp"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="34dp"
+                android:textSize="25sp"
+                android:id="@+id/password"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:text="Signup"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        android:padding="10dp"/>
+
+
+
+
+</RelativeLayout>
